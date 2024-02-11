@@ -7,14 +7,13 @@
 
 # In[7]:
 
-
+numero_entero = 42
+print("El número entero es:", numero_entero)
 
 
 # 2) Imprimir el tipo de dato de la constante 8.5
 
-# In[3]:
-
-
+print(type(8.5))
 
 
 
@@ -22,7 +21,7 @@
 
 # In[8]:
 
-
+print(type(numero_entero))
 
 
 
@@ -30,14 +29,14 @@
 
 # In[2]:
 
-
+nombre = "Luz"
 
 
 # 5) Crear una variable que contenga un número complejo
 
 # In[3]:
 
-
+numero_complejo = 3 + 4j
 
 
 
@@ -46,38 +45,42 @@
 # In[4]:
 
 
-
+print(type(numero_complejo))
 
 
 # 7) Crear una variable que contenga el valor del número Pi redondeado a 4 decimales
 
 # In[1]:
+import math
 
-
-pi = 3.1416
-
+pi_redondeado = round(math.pi, 4)
+print(pi_redondeado)
 
 # 8) Crear una variable que contenga el valor 'True' y otra que contenga el valor True. ¿Se trata de lo mismo?
 
 # In[3]:
-
-
-
+valor_string = 'True'
+valor_booleano = True
+print(valor_string == valor_booleano)
 
 
 # 9) Imprimir el tipo de dato correspondientes a las variables creadas en el punto 8
 
 # In[5]:
 
-
-
-
+print(type(valor_string))
+print(type(valor_booleano))
 
 # 10) Asignar a una variable, la suma de un número entero y otro decimal
 
 # In[1]:
 
+numero_entero = 10
+numero_decimal = 3.5
 
+resultado = numero_entero + numero_decimal
+
+print("El resultado de la suma es:", resultado)
 
 
 
@@ -85,7 +88,12 @@ pi = 3.1416
 
 # In[2]:
 
+complejo_1 = 2 + 3j
+complejo_2 = 1 - 2j
 
+resultado = complejo_1 + complejo_2
+
+print("El resultado de la suma es:", resultado)
 
 
 
@@ -94,7 +102,11 @@ pi = 3.1416
 # In[4]:
 
 
+numero_real = 5
+numero_complejo = 3 + 2j
 
+resultado = numero_real + numero_complejo
+print("El resultado de la suma es:", resultado)
 
 
 # 13) Realizar una operación de multiplicación
@@ -102,13 +114,20 @@ pi = 3.1416
 # In[5]:
 
 
+numero_real_1 = 5
+numero_real_2 = 3.5
 
+resultado = numero_real_1 * numero_real_2
+
+print("El resultado de la multiplicación es:", resultado)
 
 
 # 14) Mostrar el resultado de elevar 2 a la octava potencia
 
 # In[6]:
+resultado = 2 ** 8
 
+print("El resultado de 2 elevado a la octava potencia es:", resultado)
 
 
 
@@ -116,7 +135,8 @@ pi = 3.1416
 
 # In[8]:
 
-
+cociente = 27 // 4
+print("El cociente de la división de 27 entre 4 es:", cociente)
 
 
 
@@ -124,7 +144,8 @@ pi = 3.1416
 
 # In[9]:
 
-
+parte_entera = 27 // 4
+print("La parte entera de la división de 27 entre 4 es:", parte_entera)
 
 
 
@@ -132,6 +153,8 @@ pi = 3.1416
 
 # In[1]:
 
+resto = 27 % 4
+print("El resto de la división de 27 entre 4 es:", resto)
 
 
 
@@ -140,6 +163,10 @@ pi = 3.1416
 
 # In[2]:
 
+parte_entera = 27 // 4
+resto = 27 % 4
+resultado = parte_entera * 4 + resto
+print("El resultado es:", resultado)
 
 
 
@@ -148,7 +175,12 @@ pi = 3.1416
 
 # In[3]:
 
+variable1 = "Hola"
+variable2 = " mundo"
 
+resultado = variable1 + variable2
+
+print(resultado)
 
 
 
@@ -156,7 +188,10 @@ pi = 3.1416
 
 # In[4]:
 
-
+if int("2") == 2:
+    print("La comparación es verdadera")
+else:
+    print("La comparación es falsa")
 
 
 
@@ -165,21 +200,26 @@ pi = 3.1416
 # In[11]:
 
 
-
+if "2" == str(2):
+    print("La comparación es verdadera")
+else:
+    print("La comparación es falsa")
 
 
 # 22) ¿Por qué arroja error el siguiente cambio de tipo de datos? a = float('3,8')
 
 # In[12]:
 
-
-
-
+a = float('3.8')
+print(a)
 
 # 23) Crear una variable con el valor 3, y utilizar el operador '-=' para modificar su contenido y que de como resultado 2.
 
 # In[15]:
+variable = 3
+variable -= 1
 
+print(variable)
 
 
 
@@ -188,6 +228,10 @@ pi = 3.1416
 
 # In[29]:
 
+#1 << 2 = 0100
+
+#0100 = 4 
+#porque es un número binario
 
 
 
@@ -197,7 +241,7 @@ pi = 3.1416
 # In[23]:
 
 
-
+#No se puede sumar un numero entero con un texto, porque el 2 está entre comillas simples.
 
 
 
@@ -206,4 +250,9 @@ pi = 3.1416
 # In[30]:
 
 
+numero_entero = 10
+cadena_texto = "El número es: "
 
+resultado = cadena_texto + str(numero_entero)
+
+print(resultado)
